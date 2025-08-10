@@ -1,6 +1,6 @@
 {
   "name": "notionclonelite",
-  "homepage": "https://github.com/Unk4won/NoteApp-Lite/" ,
+  "homepage": "https://github.com/Unk4won/NoteApp-Lite/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,13 +9,15 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy":"npm build",
-    "deploy":"gh-pages -d dist"
+    "predeploy": "npm build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "slate": "^0.118.0",
+    "slate-react": "^0.117.4",
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
