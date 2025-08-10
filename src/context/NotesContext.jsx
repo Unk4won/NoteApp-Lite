@@ -1,15 +1,16 @@
-import { createContext, useContext } from "react";
+/* eslint-disable no-undef */
+import React, { createContext } from 'react';
 
-//CREAMOS EL CONTEXTO
-const NotesContext = createContext();
+// 1. Creamos el contexto.
+// eslint-disable-next-line react-refresh/only-export-components
+export const NotesContext = createContext();
 
-//EXPORTAMOS UN HOOK PERSONALIZADO PARA USARLO DE FORMA MAS SENCILLA
-export function useNotesContext(){
-const context = useContext(NotesContext);
-if (!context) {
-throw new Error("El contexto debe ser usado dentro de un provider");
-}return context;
-};
-
-//EXPORTAMOS EL PROVIDER PARA ENVOLVER COMPONENTES
-export const NotesProvider = NotesContext.Provider;
+// 2. Creamos el componente Provider
+export function NotesProvider({ children }) {
+  const noteData = useNotes(); // Importar tu hook 'useNotes'
+  return (
+    <NotesContext.Provider value={noteData}>
+      {children}
+    </NotesContext.Provider>
+  );
+}
