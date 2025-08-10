@@ -1,5 +1,5 @@
-/* eslint-disable no-undef */
-import React, { createContext } from 'react';
+import { createContext } from 'react';
+import useNotes from '../hooks/useNotes';
 
 // 1. Creamos el contexto.
 // eslint-disable-next-line react-refresh/only-export-components

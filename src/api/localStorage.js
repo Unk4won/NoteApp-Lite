@@ -10,8 +10,8 @@ const notes= localStorage.getItem(STORAGE_KEY);
   //SINO DEVUELVE UN ARRAY VACIÓ QUE SE LLENARA MAS ADELANTE 
 }
 
-//FUNCION PARA GUARDAR LAS NOTAS
+//FUNCIÓN PARA GUARDAR LAS NOTAS
 export function saveNotesFromLocalStorage(notes) {
-    // CONRVERTIMOS LAS NOTAS DE OBJETOS JS O JSON A TEXTO
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(notes))
+    // CONVERTIMOS LAS NOTAS DE OBJETOS JS O JSON A TEXTO
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(notes));
 }
