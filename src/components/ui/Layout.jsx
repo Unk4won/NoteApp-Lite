@@ -1,9 +1,8 @@
-import React from 'react'
-
-const Layout = () => {
+function Layout({ children }) {
   return (
-    <div>Layout</div>
-  )
+    <div className="flex min-h-screen bg-gray-100">
+      {children}
+    </div>
+  );
 }
-
 export default Layout
